@@ -66,6 +66,7 @@
                 <span class="panel-title"><?php echo __('Preview'); ?></span>
             </div> 
             <div class="panel-body">
+                
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
                 <!-- VK Widget -->
                 <div id="vk_groups"></div>
@@ -80,9 +81,7 @@
                     }, <?php echo $plugin->get('group'); ?>);
                 </script>
                 <noscript>Please enable JavaScript to view the widget Vkgroup.</a></noscript><br>
-                <hr class="divider">
-                <p><b>Написать разработчику:  </b>   <a href="mailto:p.masyukov@yandex.ru" class="dsq-brlink">p.masyukov@yandex.ru</a></p>
-                <p><b>Последняя версия с GitHub: </b>   <code>https://github.com/Developer-RU/Kodicms-plugin-vkgroup-2.git</code></p><br>
+
             </div>
         </div>
     </div>
