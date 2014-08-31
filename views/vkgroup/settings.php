@@ -31,10 +31,10 @@
                     </div> 
                     <hr class="divider">
                     <div class="controls">
-<?php echo Form::radio('setting[type]', 0, ($plugin->get('type') == 0), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
+<?php echo Form::radio('setting[type]', Plugin_Vkgroup::MODE_USERS, ($plugin->get('type') == Plugin_Vkgroup::MODE_USERS), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
                         <?php echo Arr::get($plugin->labels(), 'users') . "&#160;&#160;&#160;"; ?>  
                         <br>
-                        <?php echo Form::radio('setting[type]', 1, ($plugin->get('type') == 1), array('id' => 'setting_type_news')) . "&#160;&#160;&#160;"; ?>
+                        <?php echo Form::radio('setting[type]', Plugin_Vkgroup::MODE_NEWS, ($plugin->get('type') == Plugin_Vkgroup::MODE_NEWS), array('id' => 'setting_type_news')) . "&#160;&#160;&#160;"; ?>
                         <?php echo Arr::get($plugin->labels(), 'news'); ?>
                     </div>
                     <hr class="divider">
