@@ -1,3 +1,21 @@
+<?php
+
+/**
+ * @Описание файла: "vkgroup 2.0"
+ * 
+ * -------
+ * 
+ * Виджет Вконтакте - KodiCms
+ * 
+ * -------
+ * @Разработчик Масюков Павел
+ * @Дата создания 29.08.2014
+ * @Email p.masyukov@yandex.ru
+ * @URL https://github.com/Developer-RU
+ * 
+ */
+
+?>
 <div class="row">
 
     <div class="col-sm-3">
@@ -6,15 +24,14 @@
                 <span class="panel-title"><?php echo __('Settings'); ?></span>
             </div> 
             <div class="panel-body">
-                <?php echo $form; ?>
+<?php echo $form; ?>
                 <div class="control-group">
-                    <br>            
                     <div class="controls">
-                        <?php echo Form::input('setting[group]', $plugin->get('group'), array('id' => 'setting_group', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'group'))); ?>
+<?php echo Form::input('setting[group]', $plugin->get('group'), array('id' => 'setting_group', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'group'))); ?>
                     </div> 
                     <hr class="divider">
                     <div class="controls">
-                        <?php echo Form::radio('setting[type]', 0, ($plugin->get('type') == 0), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
+<?php echo Form::radio('setting[type]', 0, ($plugin->get('type') == 0), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
                         <?php echo Arr::get($plugin->labels(), 'users') . "&#160;&#160;&#160;"; ?>  
                         <br>
                         <?php echo Form::radio('setting[type]', 1, ($plugin->get('type') == 1), array('id' => 'setting_type_news')) . "&#160;&#160;&#160;"; ?>
@@ -22,23 +39,23 @@
                     </div>
                     <hr class="divider">
                     <div class="controls">
-                        <?php echo Form::input('setting[width]', $plugin->get('width'), array('id' => 'setting_width', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'width'))); ?>
+<?php echo Form::input('setting[width]', $plugin->get('width'), array('id' => 'setting_width', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'width'))); ?>
                     </div><br>
                     <div class="controls">
-                        <?php echo Form::input('setting[height]', $plugin->get('height'), array('id' => 'setting_height', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'height'))); ?>
+<?php echo Form::input('setting[height]', $plugin->get('height'), array('id' => 'setting_height', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'height'))); ?>
                     </div>
                     <hr class="divider">
                     <div class="controls">
-                        <?php echo Form::input('setting[bgcolor]', $plugin->get('bgcolor'), array('id' => 'setting_bgcolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'bgcolor'))); ?>
+<?php echo Form::input('setting[bgcolor]', $plugin->get('bgcolor'), array('id' => 'setting_bgcolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'bgcolor'))); ?>
                     </div><br>
                     <div class="controls">
-                        <?php echo Form::input('setting[textcolor]', $plugin->get('textcolor'), array('id' => 'setting_textcolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'textcolor'))); ?>
+<?php echo Form::input('setting[textcolor]', $plugin->get('textcolor'), array('id' => 'setting_textcolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'textcolor'))); ?>
                     </div><br>
                     <div class="controls">
-                        <?php echo Form::input('setting[btncolor]', $plugin->get('btncolor'), array('id' => 'setting_btncolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'btncolor'))); ?>
+<?php echo Form::input('setting[btncolor]', $plugin->get('btncolor'), array('id' => 'setting_btncolor', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'btncolor'))); ?>
                     </div>
                 </div>
-                <?php echo Form::close(); ?>
+<?php echo Form::close(); ?>
             </div>
         </div> 
     </div> 
@@ -46,7 +63,7 @@
     <div class="col-sm-9">	
         <div class="panel">
             <div class="panel-heading">
-                <span class="panel-title"><?php echo __('Тип виджета и внешний вид'); ?></span>
+                <span class="panel-title"><?php echo __('Preview'); ?></span>
             </div> 
             <div class="panel-body">
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
@@ -63,8 +80,9 @@
                     }, <?php echo $plugin->get('group'); ?>);
                 </script>
                 <noscript>Please enable JavaScript to view the widget Vkgroup.</a></noscript><br>
+                <hr class="divider">
                 <p><b>Написать разработчику:  </b>   <a href="mailto:p.masyukov@yandex.ru" class="dsq-brlink">p.masyukov@yandex.ru</a></p>
-                <p><b>Последняя версия с GitHub: </b>   <code>https://github.com/Developer-RU/Kodicms-plugin-vkgroup.git</code></p><br>
+                <p><b>Последняя версия с GitHub: </b>   <code>https://github.com/Developer-RU/Kodicms-plugin-vkgroup-2.git</code></p><br>
             </div>
         </div>
     </div>

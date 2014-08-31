@@ -3,7 +3,7 @@
 defined('SYSPATH') or die('No direct access allowed.');
 
 /**
- * @Описание файла: "vkgroup"
+ * @Описание файла: "vkgroup 2.0"
  * 
  * -------
  * 
@@ -16,6 +16,7 @@ defined('SYSPATH') or die('No direct access allowed.');
  * @URL https://github.com/Developer-RU
  * 
  */
+
 class Plugin_Vkgroup extends Plugin_Decorator {
 
     public function rules() {

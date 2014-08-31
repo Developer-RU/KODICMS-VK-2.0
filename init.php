@@ -3,7 +3,7 @@
 defined('SYSPATH') or die('No direct script access.');
 
 /**
- * @Описание файла: "vkgroup"
+ * @Описание файла: "vkgroup 2.0"
  * 
  * -------
  * 
@@ -16,6 +16,7 @@ defined('SYSPATH') or die('No direct script access.');
  * @URL https://github.com/Developer-RU
  * 
  */
+
 Plugin::factory('vkgroup', array(
     'title' => 'Vkgroup',
     'description' => 'Виджет группы вконтакте',

@@ -3,7 +3,7 @@
 defined('SYSPATH') or die('No direct access allowed.');
 
 /**
- * @Описание файла: "vkgroup"
+ * @Описание файла: "vkgroup 2.0"
  * 
  * -------
  * 
@@ -21,6 +21,7 @@ return array(
     'Vkgroup'=>'Виджет Вконтакте',
     'Group' => 'Идентификатор',
     'Widget' => 'Виджет группы Вконтакте',
+    'Preview' => 'Предпросмотр',
     'Settings' => 'Настройки',
     'Width' => 'Ширина',
     'Height' => 'Высота',
