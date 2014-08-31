@@ -18,10 +18,10 @@ defined('SYSPATH') or die('No direct access allowed.');
  */
 
 class Plugin_Vkgroup extends Plugin_Decorator {
-
+    
     const MODE_USERS = 0;
     const MODE_NEWS = 1;
-
+    
     public function rules() {
         return array(
             'group' => array(
@@ -55,9 +55,9 @@ class Plugin_Vkgroup extends Plugin_Decorator {
             'type' => self::MODE_USERS,
             'width' => 220,
             'height' => 400,
-			'bgcolor' => '#000000',
-			'textcolor' => '#ffffff',
-			'btncolor' => '#ff0000',			
+            'bgcolor' => '#000000',
+            'textcolor' => '#ffffff',
+            'btncolor' => '#ff0000',
         );
     }
 
