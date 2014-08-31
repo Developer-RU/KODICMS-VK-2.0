@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @Описание файла: "vkgroup 2.0"
  * 
@@ -14,7 +13,6 @@
  * @URL https://github.com/Developer-RU
  * 
  */
-
 ?>
 <div class="row">
 
@@ -31,12 +29,13 @@
                     </div> 
                     <hr class="divider">
                     <div class="controls">
-<?php echo Form::radio('setting[type]', 0, ($plugin->get('type') == 0), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
+<?php echo Form::radio('setting[type]', Plugin_Vkgroup::MODE_USERS, ($plugin->get('type') == Plugin_Vkgroup::MODE_USERS), array('id' => 'setting_type_user')) . "&#160;&#160;&#160;"; ?>
                         <?php echo Arr::get($plugin->labels(), 'users') . "&#160;&#160;&#160;"; ?>  
                         <br>
-                        <?php echo Form::radio('setting[type]', 1, ($plugin->get('type') == 1), array('id' => 'setting_type_news')) . "&#160;&#160;&#160;"; ?>
+<?php echo Form::radio('setting[type]', Plugin_Vkgroup::MODE_NEWS, ($plugin->get('type') == Plugin_Vkgroup::MODE_NEWS), array('id' => 'setting_type_news')) . "&#160;&#160;&#160;"; ?>
                         <?php echo Arr::get($plugin->labels(), 'news'); ?>
                     </div>
+
                     <hr class="divider">
                     <div class="controls">
 <?php echo Form::input('setting[width]', $plugin->get('width'), array('id' => 'setting_width', 'class' => 'form-control', 'placeholder' => Arr::get($plugin->labels(), 'width'))); ?>
@@ -66,7 +65,7 @@
                 <span class="panel-title"><?php echo __('Preview'); ?></span>
             </div> 
             <div class="panel-body">
-                
+
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
                 <!-- VK Widget -->
                 <div id="vk_groups"></div>
