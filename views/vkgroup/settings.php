@@ -71,26 +71,14 @@
                 <!-- VK Widget -->
                 <div id="vk_groups"></div>
                 <script type="text/javascript">
-        		var options = {};
-        		<?php $options = array(
-        			'mode' => 'type',
-        			'width' => 'width',
-        			'height' => 'height',
-        			'color1' => 'bgcolor',
-        			'color2' => 'textcolor',
-        			'color3' => 'btncolor'
-        		);
-        		
-        		foreach ($options as $vk_key => $plugin_key)
-        		{
-        			if($plugin->get($plugin_key) !== NULL)
-        			{
-        				echo "options['{$vk_key}'] = '" . $plugin->get($plugin_key) . "';";
-        			}
-        		}
-        		?>
-        		
-                VK.Widgets.Group("vk_groups", options, '<?php echo $plugin->get('group'); ?>');
+                    VK.Widgets.Group("vk_groups", {
+                        mode: <?php echo $plugin->get('type'); ?>,
+                        width: "<?php echo $plugin->get('width'); ?>",
+                        height: "<?php echo $plugin->get('height'); ?>",
+                        color1: "<?php echo $plugin->get('bgcolor'); ?>",
+                        color2: "<?php echo $plugin->get('textcolor'); ?>",
+                        color3: "<?php echo $plugin->get('btncolor'); ?>"
+                    }, <?php echo $plugin->get('group'); ?>);
                 </script>
                 <noscript>Please enable JavaScript to view the widget Vkgroup.</a></noscript><br>
 
