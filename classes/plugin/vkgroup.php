@@ -51,6 +51,9 @@ class Plugin_Vkgroup extends Plugin_Decorator {
         return array(
         'width' => 220,
         'height' => 400,
+        'bgcolor' => '#000000',
+        'textcolor' => '#ffffff',
+        'btncolor' => '#ff0000',
         );
     }
 
