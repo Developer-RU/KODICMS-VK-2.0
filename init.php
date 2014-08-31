@@ -19,6 +19,7 @@ defined('SYSPATH') or die('No direct script access.');
 
 Plugin::factory('vkgroup', array(
     'title' => 'Vkgroup',
-    'description' => 'Виджет группы вконтакте',
-    'version' => '1.0.3',
+    'description' => 'Виджет группы Вконтакте',
+    'version' => '2.0.0',
+    'author' => 'Масюков Павел',
 ))->register();
